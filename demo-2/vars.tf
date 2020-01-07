@@ -5,24 +5,24 @@ variable "AWS_SECRET_KEY" {
 }
 
 variable "AWS_REGION" {
-  default = "eu-west-1"
+  default = "sa-east-1"
 }
 
 variable "AMIS" {
   type = map(string)
   default = {
-    us-east-1 = "ami-13be557e"
-    us-west-2 = "ami-06b94666"
-    eu-west-1 = "ami-844e0bf7"
+    us-east-1 = "ami-00a208c7cdba991ea"
+    us-west-1 = "ami-0f42d8c4eb586ccf7"
+    sa-east-1 = "ami-049f5d88d2d436431"
   }
 }
 
 variable "PATH_TO_PRIVATE_KEY" {
-  default = "mykey"
+  default = "demokey"
 }
 
 variable "PATH_TO_PUBLIC_KEY" {
-  default = "mykey.pub"
+  default = "demokey.pub"
 }
 
 variable "INSTANCE_USERNAME" {
